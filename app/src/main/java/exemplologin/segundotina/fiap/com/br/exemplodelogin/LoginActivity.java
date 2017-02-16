@@ -30,13 +30,16 @@ public class LoginActivity extends AppCompatActivity {
         String usuario = edtUsuario.getText().toString();
         String senha = edtSenha.getText().toString();
 
-        if(usuario.toLowerCase().equals("fiap") && senha.toLowerCase().equals("fiap123")){
+        if (usuario.toLowerCase().equals("fiap") && senha.toLowerCase().equals("fiap123")) {
             Intent it = new Intent(this, MainActivity.class);
             startActivity(it);
-        }else{
+        } else {
             Toast.makeText(this, getString(R.string.mensagem_erro), Toast.LENGTH_SHORT).show();
         }
-
-
     }
+        public void cadastrar(View v) {
+        Intent it = new Intent(this, CadastrarActivity.class);
+        startActivity(it);
+        }
+
 }
