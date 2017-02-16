@@ -14,9 +14,63 @@
     <TextView
         android:layout_width= "match_parent"
         android:layout_height = "wrap_content"
-        android:text="Nome: " />
+        android:text="Nome" />
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNome" />
+
+    <TextView
+        android:text="sobrenome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edtSobrenome" />
+
+    <TextView
+        android:text="@string/senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtSenha" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdgSexo">
+
+        <RadioButton
+            android:text="Masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbMasculino"
+            android:layout_weight="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:text="Feminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdbFeminino"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <Button
+        android:text="Cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCadastrar" />
 </LinearLayout>
